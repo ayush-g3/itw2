@@ -1,0 +1,16 @@
+{% extends 'academics/base.html' %}
+
+{% block content %}
+   <h2 class="navy heading">Faculties</h2>
+
+  {% for faculty in faculties %}
+   <div class="course-desc mt-5">
+       <p class="heading">{{faculty.name}}</p>
+       <p class="heading">{{faculty.subject}}</p>
+       <p class="para">{{faculty.desc}}</p>
+   </div>
+   <hr>
+   {% endfor %}
+
+{% endblock %}
+
